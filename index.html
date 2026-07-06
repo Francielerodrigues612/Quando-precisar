@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Abra Quando Precisar 🤍</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="particles"></div>
+
+<!-- INTRODUÇÃO -->
+
+<section id="intro" class="screen active">
+
+<div class="intro-content">
+
+<h1 id="typing"></h1>
+
+<button id="startBtn">
+🤍 Entrar
+</button>
+
+</div>
+
+</section>
+
+<!-- TRANSIÇÃO -->
+
+<section id="transition" class="screen">
+
+<div class="transition-content">
+
+<h2>
+Bem-vindo ao seu cantinho seguro.
+</h2>
+
+</div>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu" class="screen">
+
+<div class="header">
+
+<button id="darkModeBtn">
+🌙 Modo Noturno
+</button>
+
+<h1>🩹 Kit Emocional</h1>
+
+<p>
+Escolha o que você precisa neste momento.
+</p>
+
+<div id="mensagemDia" class="mensagem-dia"></div>
+
+</div>
+
+<div class="cards">
+
+<div class="card" data-page="comfort">
+<span>☕</span>
+<h3>Dose de Conforto</h3>
+</div>
+
+<div class="card" data-page="hope">
+<span>🌻</span>
+<h3>Dose de Esperança</h3>
+</div>
+
+<div class="card" data-page="photos">
+<span>📸</span>
+<h3>Lembrança Feliz</h3>
+</div>
+
+<div class="card" data-page="music">
+<span>🎵</span>
+<h3>Música para o Coração</h3>
+</div>
+
+<div class="card" data-page="courage">
+<span>💪</span>
+<h3>Dose de Coragem</h3>
+</div>
+
+<div class="card" data-page="letter">
+<span>📩</span>
+<h3>Carta de Emergência</h3>
+</div>
+
+<div class="card" data-page="openwhen">
+<span>💌</span>
+<h3>Abra Quando...</h3>
+</div>
+
+<div class="card" data-page="motivos">
+<span>🤍</span>
+<h3>100 Motivos</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONFORTO -->
+
+<section id="comfort" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>☕ Dose de Conforto</h1>
+
+<div class="box">
+
+<p id="comfortText"></p>
+
+<button id="newComfort" class="action-btn">
+🤍 Outra Mensagem
+</button>
+
+</div>
+
+<div class="foto-card">
+<img src="gabriel.png">
+</div>
+
+</section>
+
+<!-- ESPERANÇA -->
+
+<section id="hope" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>🌻 Dose de Esperança</h1>
+
+<div class="box">
+
+<p id="hopeText"></p>
+
+<br>
+
+<button id="newHope" class="action-btn">
+🌻 Outra Mensagem
+</button>
+
+</div>
+
+<div class="foto-card-grande">
+<img src="gabriel1.png" alt="Gabriel">
+</div>
+
+</section>
+
+
+<!-- FOTOS -->
+
+<section id="photos" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>📸 Lembrança Feliz</h1>
+
+<div class="gallery">
+
+<div class="polaroid">
+<img src="foto1.jpg">
+<p>Nosso momento especial 🤍</p>
+</div>
+
+<div class="polaroid">
+<img src="foto2.jpg">
+<p>Uma lembrança feliz 🌷</p>
+</div>
+
+<div class="polaroid">
+<img src="foto3.jpg">
+<p>Para guardar no coração ✨</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MÚSICAS -->
+
+<section id="music" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>🎵 Música para o Coração</h1>
+
+<div class="box">
+
+<audio controls>
+<source src="musica1.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+<source src="musica2.mp3" type="audio/mpeg">
+</audio>
+
+<audio controls>
+<source src="musica3.mp3" type="audio/mpeg">
+</audio>
+
+</div>
+
+</section>
+<!-- CORAGEM -->
+
+<section id="courage" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>💪 Dose de Coragem</h1>
+
+<div class="box">
+
+<p id="courageText"></p>
+
+<br>
+
+<button id="newCourage" class="action-btn">
+💪 Outra Mensagem
+</button>
+
+</div>
+
+<div class="foto-card-grande">
+<img src="gabriel2.png" alt="Gabriel">
+
+</div>
+
+</section>
+
+<!-- CARTA -->
+
+<section id="letter" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>📩 Carta de Emergência</h1>
+
+<div class="box">
+
+<p id="letterText"></p>
+
+<br>
+
+<button id="newLetter" class="action-btn">
+📩 Outra Carta
+</button>
+
+</div>
+
+<div class="foto-card-grande">
+<img src="gabriel3.png" alt="Gabriel">
+
+</div>
+
+</section>
+
+<!-- ABRA QUANDO -->
+
+<section id="openwhen" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>💌 Abra Quando...</h1>
+
+<div class="box">
+
+<button class="envelope"
+onclick="abrirEnvelope('triste')">
+💌 Quando estiver triste
+</button>
+
+<button class="envelope"
+onclick="abrirEnvelope('feliz')">
+💌 Quando estiver feliz
+</button>
+
+<button class="envelope"
+onclick="abrirEnvelope('saudade')">
+💌 Quando sentir saudade
+</button>
+
+<button class="envelope"
+onclick="abrirEnvelope('cansado')">
+💌 Quando estiver cansado
+</button>
+
+<button class="envelope"
+onclick="abrirEnvelope('acreditar')">
+💌 Quando precisar acreditar em si mesmo
+</button>
+
+<div id="textoEnvelope"></div>
+
+</div>
+
+<div class="foto-card-grande">
+
+<img src="gabriel4.png" alt="Gabriel">
+
+
+</div>
+
+</section>
+
+<!-- 100 MOTIVOS -->
+
+<section id="motivos" class="page">
+
+<button class="back">
+← Voltar
+</button>
+
+<h1>🤍 100 Motivos</h1>
+
+<div class="box">
+
+<br>
+
+<div id="numeroMotivo"></div>
+
+<p id="motivoTexto"></p>
+
+<br>
+
+<button id="motivoBtn" class="action-btn">
+🤍 Outro Motivo
+</button>
+
+</div>
+
+<div class="foto-card-grande">
+
+<img src="gabriel5.png" alt="Gabriel">
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
